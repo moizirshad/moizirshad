@@ -1,54 +1,31 @@
-name: Build and deploy Flutter portfolio
-
+name: Deploy portfolio to GitHub Pages
 on:
   push:
     branches: [main]
     paths:
-      - moizirshad-portfolio-source.zip
+      - portfolio-web.zip
       - .github/workflows/deploy.yml
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: true
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: stable
-      - name: Extract portfolio source
-        run: unzip -q moizirshad-portfolio-source.zip -d portfolio-site
-      - name: Resolve packages
-        working-directory: portfolio-site/portfolio-site
-        run: flutter pub get
-      - name: Analyze
-        working-directory: portfolio-site/portfolio-site
-        run: flutter analyze --no-fatal-infos
-      - name: Run tests
-        working-directory: portfolio-site/portfolio-site
-        run: flutter test
-      - name: Build web release
-        working-directory: portfolio-site/portfolio-site
-        run: flutter build web --release --base-href /moizirshad/
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: portfolio-site/portfolio-site/build/web
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
     steps:
+      - uses: actions/checkout@v4
+      - name: Extract compiled web release
+        run: unzip -q portfolio-web.zip -d build/web
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
       - id: deployment
         uses: actions/deploy-pages@v4
