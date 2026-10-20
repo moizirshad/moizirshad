@@ -23,8 +23,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Extract compiled web release
         run: |
-          mkdir -p build/web
-          unzip -q portfolio-web.zip -d build/web
+          mkdir -p build/web artifact
+          unzip -q portfolio-web.zip -d artifact
+          unzip -q artifact/portfolio-web.zip -d build/web
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
