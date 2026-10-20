@@ -1,21 +1,41 @@
 # Hi 👋, I'm Moiz Irshad
 
-### Flutter & Mobile App Developer · Karachi, Pakistan
+### Mobile App Development Lead · iOS · Android · Flutter · React Native · Backend APIs
 
-I build mobile applications with **Flutter** and **Swift**, with a focus on clean app architecture, thoughtful user experiences, and reliable integrations. I enjoy taking an idea from the first screen through APIs, data, and release workflows.
+I'm a mobile software engineer with **11+ years of experience** building, scaling, and maintaining production mobile applications. My expertise spans native iOS and Android, cross-platform development with Flutter and React Native, mobile architecture, backend APIs, and engineering leadership.
 
-- 📱 Working across cross-platform Flutter and native iOS development
-- 🔌 Building with REST APIs, Firebase, authentication, and real-time features
-- 🛠️ Interested in mobile architecture, app quality, and developer tooling
-- 💬 Ask me about Flutter, Dart, Swift, Firebase, or mobile app development
-- 🌍 Based in Karachi, Pakistan
+I enjoy solving complex engineering problems, building reliable products from the ground up, mentoring developers, and turning ideas into production-ready applications.
+
+- 📱 Leading and building mobile applications across iOS, Android, Flutter, and React Native
+- 🏗️ Designing scalable architectures and maintainable software
+- 🔌 Working with REST APIs, authentication, Firebase, databases, and real-time features
+- ☁️ Interested in backend development, cloud services, CI/CD, and production reliability
+- 🤖 Exploring AI-assisted engineering, development automation, and smarter workflows
+- 💬 Ask me about Swift, SwiftUI, Flutter, Dart, mobile architecture, and API integration
+- 🌍 Based in Karachi, Pakistan · Open to remote opportunities
 
 ### 🧰 Tech Stack
 
-**Mobile:** Dart · Flutter · Swift · Java  
-**Backend & APIs:** JavaScript · Node.js · Express.js · Socket.IO · JWT · Swagger  
-**Data & Cloud:** Firebase · MongoDB · MySQL · Realm  
-**Tools & Delivery:** Fastlane · Gradle · Git · GitHub · Postman
+**Mobile Development:** iOS · Android · Swift · SwiftUI · UIKit · Objective-C · Kotlin · Java · Flutter · Dart · React Native
+
+**Backend & APIs:** JavaScript · Node.js · Express.js · REST APIs · Socket.IO · JWT · Swagger
+
+**Databases & Cloud:** Firebase · MongoDB · MySQL · Realm
+
+**Architecture & State Management:** Clean Architecture · MVVM · Repository Pattern · Riverpod · BLoC · Provider
+
+**Tools & Delivery:** Git · GitHub · Fastlane · Gradle · Postman · CI/CD · Automated Testing
+
+**AI-Enabled Engineering:** AI-Assisted Development · Debugging · Testing Workflows · Developer Productivity
+
+### 💼 Professional Highlights
+
+- 11+ years of experience in mobile software engineering.
+- Experience across native iOS, Android, Flutter, and React Native.
+- Contributed to mobile platforms serving large user bases.
+- Built cross-platform mobile applications from the ground up.
+- Experience in technical leadership, architecture, mentoring, and code reviews.
+- Focused on application performance, reliability, maintainability, and production quality.
 
 ### 📊 GitHub Stats
 
@@ -26,5 +46,11 @@ I build mobile applications with **Flutter** and **Swift**, with a focus on clea
 
 ### 🔗 Connect
 
-[![X](https://img.shields.io/badge/X-%40Moiz__Irshad-000000?logo=x&logoColor=white)](https://twitter.com/Moiz_Irshad)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0005--1948--7036-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-1948-7036)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/moiz-irshad/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/moizirshad)
+[![X](https://img.shields.io/badge/X-%40Moiz__Irshad-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/Moiz_Irshad)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0005--1948--7036-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0005-1948-7036)
+
+---
+
+*Building scalable mobile products through thoughtful engineering, strong architecture, and continuous learning.*
