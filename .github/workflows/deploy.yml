@@ -3,7 +3,9 @@ name: Build and deploy Flutter portfolio
 on:
   push:
     branches: [main]
-    paths: [moizirshad-portfolio-source.zip]
+    paths:
+      - moizirshad-portfolio-source.zip
+      - .github/workflows/deploy.yml
   workflow_dispatch:
 
 permissions:
@@ -26,21 +28,21 @@ jobs:
       - name: Extract portfolio source
         run: unzip -q moizirshad-portfolio-source.zip -d portfolio-site
       - name: Resolve packages
-        working-directory: portfolio-site
+        working-directory: portfolio-site/portfolio-site
         run: flutter pub get
       - name: Analyze
-        working-directory: portfolio-site
+        working-directory: portfolio-site/portfolio-site
         run: flutter analyze
       - name: Run tests
-        working-directory: portfolio-site
+        working-directory: portfolio-site/portfolio-site
         run: flutter test
       - name: Build web release
-        working-directory: portfolio-site
+        working-directory: portfolio-site/portfolio-site
         run: flutter build web --release --base-href /moizirshad/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: portfolio-site/build/web
+          path: portfolio-site/portfolio-site/build/web
   deploy:
     environment:
       name: github-pages
